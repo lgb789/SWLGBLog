@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import SWLGBLog
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        testLog()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func testLog() -> Void {
+        LGB.log("hello world")
     }
 
 }

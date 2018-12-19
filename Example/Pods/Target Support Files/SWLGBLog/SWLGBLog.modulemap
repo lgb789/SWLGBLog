@@ -1,0 +1,6 @@
+framework module SWLGBLog {
+  umbrella header "SWLGBLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

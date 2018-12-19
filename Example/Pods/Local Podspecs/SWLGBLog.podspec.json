@@ -1,6 +1,6 @@
 {
   "name": "SWLGBLog",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "A custom swift log.",
   "description": "TODO: A custom swift log, can show date file and line.",
   "homepage": "https://github.com/lgb789/SWLGBLog",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/lgb789/SWLGBLog.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "swift_version": "4.2",
   "platforms": {

@@ -14,6 +14,7 @@
 		8BE42D57C3A1F6A0AF7AD35850B0FCD2 /* LGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B55B56AE5A814EE6455E3F0003E7F /* LGB.swift */; };
 		9F174D3A83A09D407828318C121A1B38 /* LGB+log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80FD18F6C9A84F6C01259E95C09EA3F /* LGB+log.swift */; };
 		C5A208BF0FC14303360AF5962FC25751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		C88B3338C220AB8BE3A548CCA4C273D6 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5849A1E4C191D1A8AAB3B5D8A5E05F /* SwiftClass.swift */; };
 		DB4938550AC984C8F14DD34818179AC6 /* SWLGBLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8518FB544482DB24AE70909984D4BB4 /* SWLGBLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E377FAF4C56DC1DE926E8A0607E6A37F /* Pods-SWLGBLog_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE63467008442C8D92A612F770A9FE78 /* Pods-SWLGBLog_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA57A85E65B7D14BE13083836100CA91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -38,27 +39,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01175C11FAEFCC4452622451852B82A8 /* SWLGBLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWLGBLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01175C11FAEFCC4452622451852B82A8 /* SWLGBLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWLGBLog.framework; path = SWLGBLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		025D8E33BCDCF09FC9C58B3461815CEF /* Pods-SWLGBLog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SWLGBLog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		04F579BAB912838CEA8A6A298DF59D02 /* Pods-SWLGBLog_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SWLGBLog_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0E5E0AFC86448D67A5344933CBAAC3E5 /* Pods-SWLGBLog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SWLGBLog_Example-dummy.m"; sourceTree = "<group>"; };
-		11DD46D98A26DF8EF3AAE8F39EAB7B0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		11DD46D98A26DF8EF3AAE8F39EAB7B0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		17BCE18B6857D22D9682E714B1444B3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2349F74D5D2BDF183DB9862EA749C145 /* Pods_SWLGBLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLGBLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2349F74D5D2BDF183DB9862EA749C145 /* Pods_SWLGBLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SWLGBLog_Tests.framework; path = "Pods-SWLGBLog_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3B9FF3E163D6EF4B2998732177B5A3 /* Pods-SWLGBLog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SWLGBLog_Example.modulemap"; sourceTree = "<group>"; };
 		3B1E7FA2E1244E4AEBD9F217663B0EB7 /* Pods-SWLGBLog_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWLGBLog_Example-resources.sh"; sourceTree = "<group>"; };
 		4C0022FFF618648986F24B14AE469131 /* Pods-SWLGBLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWLGBLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C6B55B56AE5A814EE6455E3F0003E7F /* LGB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LGB.swift; path = SWLGBLog/Classes/LGB.swift; sourceTree = "<group>"; };
 		5017EA10644238C0B16E8EA463AEBEB2 /* Pods-SWLGBLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWLGBLog_Example.release.xcconfig"; sourceTree = "<group>"; };
-		55B1F38A65BECE0F8E85568EE49F588A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		55B1F38A65BECE0F8E85568EE49F588A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6988262D806A147F8095C2F1C3E1CB0C /* SWLGBLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWLGBLog-dummy.m"; sourceTree = "<group>"; };
 		6FD7283078E7452054C495B2477BB040 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B162A032C911997EBCE59DF6937EC3 /* Pods-SWLGBLog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWLGBLog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7784EB6AE435F7D79CE42F746232BB05 /* SWLGBLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWLGBLog.xcconfig; sourceTree = "<group>"; };
-		7901ACF175B34A6C3D76E50EAA0E6C98 /* SWLGBLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SWLGBLog.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7901ACF175B34A6C3D76E50EAA0E6C98 /* SWLGBLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SWLGBLog.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		867A3ABC232D81209A3D7EB76C82E4E8 /* Pods-SWLGBLog_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWLGBLog_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		88C61EFDF1126083832DE070F679650F /* Pods-SWLGBLog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SWLGBLog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94191B11185A8B982C3C7DA1FA130A1E /* Pods-SWLGBLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWLGBLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		957CC90BD70B02A88E9754C4783B1C25 /* SWLGBLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWLGBLog.modulemap; sourceTree = "<group>"; };
 		972CC3F11F477A913CDB002B036679B5 /* SWLGBLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWLGBLog-prefix.pch"; sourceTree = "<group>"; };
@@ -67,8 +68,9 @@
 		ADBF30BC3DE030FE51BB33EC4FD40DEA /* Pods-SWLGBLog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SWLGBLog_Tests.modulemap"; sourceTree = "<group>"; };
 		C35D6781C3C3F9DCF2AFE932C60431B9 /* Pods-SWLGBLog_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWLGBLog_Tests-resources.sh"; sourceTree = "<group>"; };
 		CA9B96DE6EB231540625DDA5045EF7FD /* Pods-SWLGBLog_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SWLGBLog_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CF5849A1E4C191D1A8AAB3B5D8A5E05F /* SwiftClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftClass.swift; path = SWLGBLog/Classes/SwiftClass.swift; sourceTree = "<group>"; };
 		D1E22BEA11E022C6040FF0FB603B5363 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5E36AE5B957F0F0CC612A58591965CB /* Pods_SWLGBLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLGBLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E36AE5B957F0F0CC612A58591965CB /* Pods_SWLGBLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SWLGBLog_Example.framework; path = "Pods-SWLGBLog_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E8518FB544482DB24AE70909984D4BB4 /* SWLGBLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWLGBLog-umbrella.h"; sourceTree = "<group>"; };
 		EE63467008442C8D92A612F770A9FE78 /* Pods-SWLGBLog_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SWLGBLog_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				4C6B55B56AE5A814EE6455E3F0003E7F /* LGB.swift */,
 				F80FD18F6C9A84F6C01259E95C09EA3F /* LGB+log.swift */,
+				CF5849A1E4C191D1A8AAB3B5D8A5E05F /* SwiftClass.swift */,
 				CF88B6137B9F1A68EF44A16F7701E8C2 /* Pod */,
 				2627940B5B3EF94209055EA157114288 /* Support Files */,
 			);
@@ -375,6 +378,7 @@
 			files = (
 				9F174D3A83A09D407828318C121A1B38 /* LGB+log.swift in Sources */,
 				8BE42D57C3A1F6A0AF7AD35850B0FCD2 /* LGB.swift in Sources */,
+				C88B3338C220AB8BE3A548CCA4C273D6 /* SwiftClass.swift in Sources */,
 				1A454EE1E6365A2E1670650193A29841 /* SWLGBLog-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +570,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SWLGBLog'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A custom swift log.'
 
 # This description is used to generate tags and improve search results.
@@ -27,6 +27,7 @@ TODO: A custom swift log, can show date file and line.
   s.author           = { 'lgb789@gmail.com' => 'lgb789@gmail.com' }
   s.source           = { :git => 'https://github.com/lgb789/SWLGBLog.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version = '4.2'
 
   s.ios.deployment_target = '8.0'
 

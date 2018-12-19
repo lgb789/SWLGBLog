@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SWLGBLog_Example' do
+  pod 'SWLGBLog', :path => '../'
+
+  target 'SWLGBLog_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -36,86 +36,107 @@ public extension LGB {
         }
     }
     
-    public static var defaultLevel: preLevel = .debug;
-    public static var preString: String = "";
+    public static var defaultLevel: preLevel = .debug
+    public static var preString: String = ""
+    @objc public static var closeLog: Bool = false
     
     //String
     public static func log(_ format: String, _ args: CVarArg..., level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
         print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: format, arguments:args))");
-        #endif
+
     }
     
     //AnyObject
     public static func log(_ obj: AnyObject, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: "%@", obj as! CVarArg))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: "%@", obj as! CVarArg))")
+
     }
     
     //CGPoint
     public static func log(_ point: CGPoint, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: point))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: point))")
+
     }
     
     //CGRect
     public static func log(_ rect: CGRect, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: rect))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: rect))")
+
     }
     
     //CGSize
     public static func log(_ size: CGSize, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: size))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: size))")
+
     }
     
     //UIEdgeInsets
     public static func log(_ insets: UIEdgeInsets, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))")
+
     }
     
     //CGAffineTransform
     public static func log(_ transform: CGAffineTransform, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: transform))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: transform))")
+
     }
     
     //CGVector
     public static func log(_ vector: CGVector, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: vector))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: vector))")
+
     }
     //UIOffset
     public static func log(_ offset: UIOffset, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: offset))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: offset))")
+
     }
     
     //NSDirectionalEdgeInsets
     @available(iOS 11.0, *)
     public static func log(_ insets: NSDirectionalEdgeInsets, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
-        #if DEBUG
+        if closeLog {
+            return
+        }
         let prefix = preString.count > 0 ? preString : level.description()
-        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))");
-        #endif
+        print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))")
+
     }
 }

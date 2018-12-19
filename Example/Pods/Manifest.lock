@@ -1,5 +1,5 @@
 PODS:
-  - SWLGBLog (0.1.0)
+  - SWLGBLog (0.1.2)
 
 DEPENDENCIES:
   - SWLGBLog (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SWLGBLog: 36863bf65ce3b08ff1904f67d29aeacf753e3f8f
+  SWLGBLog: edc71f08cecd9eb7479a11c2d9a23d00833b63cb
 
 PODFILE CHECKSUM: f378862758c2189fe973d2e860b3d5aacb8b8e34
 

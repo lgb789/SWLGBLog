@@ -15,7 +15,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         testLog()
+        LGB.preString = "true"
+        LGB.log("hello world 01")
+        
+        LGB.preString = ""
+        LGB.defaultLevel = .error
+        LGB.log("hello world 02")
+        
+        LGB.closeLog = true
+        
+        LGB.log("hello world 03")
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +35,11 @@ class ViewController: UIViewController {
     }
     
     func testLog() -> Void {
-        LGB.log("hello world")
+        LGB.log("hello world 00")
+        LGB.closeLog = true
+        LGB.log("close log")
+        LGB.closeLog = false
+        
     }
 
 }

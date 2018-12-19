@@ -1,20 +1,21 @@
 {
   "name": "SWLGBLog",
-  "version": "0.1.0",
-  "summary": "A short description of SWLGBLog.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lgb789@126.com/SWLGBLog",
+  "version": "0.1.2",
+  "summary": "A custom swift log.",
+  "description": "TODO: A custom swift log, can show date file and line.",
+  "homepage": "https://github.com/lgb789/SWLGBLog",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "lgb789@126.com": "lgb789@126.com"
+    "lgb789@gmail.com": "lgb789@gmail.com"
   },
   "source": {
-    "git": "https://github.com/lgb789@126.com/SWLGBLog.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/lgb789/SWLGBLog.git",
+    "tag": "0.1.2"
   },
+  "swift_version": "4.2",
   "platforms": {
     "ios": "8.0"
   },

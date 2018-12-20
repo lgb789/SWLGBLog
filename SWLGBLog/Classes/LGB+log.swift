@@ -44,7 +44,7 @@ public extension LGB {
     public static func log(_ format: String, _ args: CVarArg..., level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: format, arguments:args))");
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(String(format: format, arguments:args))");
         }
     }
     
@@ -52,7 +52,7 @@ public extension LGB {
     public static func log(_ obj: AnyObject, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: "%@", obj as! CVarArg))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(String(format: "%@", obj as! CVarArg))")
         }
     }
     
@@ -60,7 +60,7 @@ public extension LGB {
     public static func log(_ point: CGPoint, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: point))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: point))")
         }
     }
     
@@ -68,7 +68,7 @@ public extension LGB {
     public static func log(_ rect: CGRect, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: rect))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: rect))")
         }
     }
     
@@ -76,7 +76,7 @@ public extension LGB {
     public static func log(_ size: CGSize, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: size))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: size))")
         }
     }
     
@@ -84,7 +84,7 @@ public extension LGB {
     public static func log(_ insets: UIEdgeInsets, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: insets))")
         }
     }
     
@@ -92,7 +92,7 @@ public extension LGB {
     public static func log(_ transform: CGAffineTransform, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: transform))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: transform))")
         }
     }
     
@@ -100,7 +100,7 @@ public extension LGB {
     public static func log(_ vector: CGVector, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: vector))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: vector))")
         }
     }
     
@@ -108,7 +108,7 @@ public extension LGB {
     public static func log(_ offset: UIOffset, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: offset))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: offset))")
         }
     }
     
@@ -117,7 +117,7 @@ public extension LGB {
     public static func log(_ insets: NSDirectionalEdgeInsets, level: preLevel = defaultLevel, fileName: String = #file, line: Int = #line) {
         if enableLog {
             let prefix = preString.count > 0 ? preString : level.description()
-            print(" \(prefix) [\(currentDate())][\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(NSCoder.string(for: insets))")
+            print(" \(prefix) [\(currentDate())][\((fileName as NSString).lastPathComponent):\(line)] \(NSCoder.string(for: insets))")
         }
     }
 }

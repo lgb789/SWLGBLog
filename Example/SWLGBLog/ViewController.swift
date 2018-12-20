@@ -15,7 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+//        SwiftClass88.llog("view did load")
+//        
+//        SwiftClass88().test()
         
+        ObjcObj01().test()
+        LGB.log("i love you")
         testLog()
         LGB.preString = "true"
         LGB.log("hello world 01")

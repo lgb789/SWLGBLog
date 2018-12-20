@@ -22,6 +22,8 @@
 //    LGB *lgb = [LGB new];
     SwiftClass01 *swc = [SwiftClass01 new];
 //    [SwiftClass new];
+    
+//    [LGB new].flag = YES;
 }
 
 /*

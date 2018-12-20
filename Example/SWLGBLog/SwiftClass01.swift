@@ -15,4 +15,14 @@ class SwiftClass01: NSObject {
     }
     
     public var flag: Bool = false
+    
+    public static func llog(_ format: String, _ args: CVarArg..., fileName: String = #file, line: Int = #line) {
+        //        if closeLog {
+        //            return
+        //        }
+        //        let prefix = preString.count > 0 ? preString : level.description()
+        print(" [\(URL(string: fileName)?.lastPathComponent ?? ""):\(line)] \(String(format: format, arguments:args))");
+        
+    }
+
 }

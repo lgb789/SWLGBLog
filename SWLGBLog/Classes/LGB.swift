@@ -7,8 +7,6 @@
 //
 
 import Foundation
-open class LGB {
-    @objc func test() -> String {
-        return "hello object-c"
-    }
+open class LGB: NSObject {
+
 }

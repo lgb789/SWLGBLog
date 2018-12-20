@@ -18,7 +18,7 @@
 //    NSLog(@"str:%@", str);
     
 #ifdef DEBUG
-    LGB.closeLog = YES;
+    LGB.enableLog = YES;
 #endif
     
 }

@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         LGB.defaultLevel = .error
         LGB.log("hello world 02")
         
-        LGB.closeLog = true
+        LGB.enableLog = true
         
         LGB.log("hello world 03")
     }
@@ -41,9 +41,9 @@ class ViewController: UIViewController {
     
     func testLog() -> Void {
         LGB.log("hello world 00")
-        LGB.closeLog = true
+        LGB.enableLog = true
         LGB.log("close log")
-        LGB.closeLog = false
+        LGB.enableLog = false
         
     }
 
